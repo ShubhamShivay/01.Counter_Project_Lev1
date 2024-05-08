@@ -4,17 +4,21 @@ import React from "react";
 
 function App() {
 	const [counter, setcounter] = useState(0);
+
+	//Increase
 	const increase = () => {
 		if (counter != 20) {
 			setcounter(counter + 1);
 		}
 	};
+	//Decrease
 	const decrease = () => {
 		if (counter !== 0) {
 			setcounter(counter - 1);
 		}
 	};
 
+	// reset
 	const reset = () => {
 		return setcounter(0);
 	};
